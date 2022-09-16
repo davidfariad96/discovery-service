@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:18
 
 ADD target/discovery-service.jar discovery-service.jar
 
