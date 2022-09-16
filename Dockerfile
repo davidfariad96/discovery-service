@@ -1,6 +1,6 @@
 FROM openjdk:18
 
-ADD target/discovery-service.jar discovery-service.jar
+ADD target/discovery-service-0.0.1.jar discovery-service-0.0.1.jar
 
 EXPOSE 8080
 
