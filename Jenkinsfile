@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "Eureka Discovery Service"
                 sh 'ls'
-                sh 'docker build -t  discovery-service-microservice/discovery-service:${BUILD_NUMBER} .'
+                sh 'docker build -t  discovery-service:${BUILD_NUMBER} .'
             }
         }
         stage('Docker Login'){
@@ -36,7 +36,7 @@ pipeline {
         }
         stage('Docker Push'){
             steps {
-                sh 'docker push drfd96/discovery-service:${BUILD_NUMBER}'
+                sh 'docker push discovery-service:${BUILD_NUMBER}'
             }
         }
         stage('Docker deploy'){
