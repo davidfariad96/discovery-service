@@ -4,4 +4,4 @@ ADD target/discovery-service-0.0.1.jar discovery-service-0.0.1.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","jdiscovery-service-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","discovery-service-0.0.1.jar"]
