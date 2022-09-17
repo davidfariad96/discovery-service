@@ -23,7 +23,7 @@ pipeline {
             steps {
                 echo "Eureka Discovery Service"
                 sh 'ls'
-                sh 'docker build -t  discovery-service:${BUILD_NUMBER} .'
+                sh 'docker build -t drfd96/discovery-service:${BUILD_NUMBER} .'
             }
         }
         stage('Docker Login'){
